@@ -1,1 +1,26 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(c/a))+String.fromCharCode(c%a+161)};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\[\xa1-\xff]+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp(e(c),'g'),k[c])}}return p}('� �(�){�=� �;�=�.�();�=�.�();�=� �(\'�\',\'�\',\'�\',\'�\',\'�\',\'�\',\'�\',\'�\',\'�\',\'�\',\'�\',\'�\');d=�.�();�=�.�();�=� �(\'�\',\'�\',\'�\',\'�\',\'�\',\'�\',\'�\');h=�.�();�(h<�){h="0"+h}m=�.�();s=�.�();�(s<�){s="0"+s}� �=h>=�?\'�\':\'�\';h=h%�;h=h?h:�;m=m<�?\'0\'+m:m;�=\' | \'+�[�]+\' \'+�[�]+\' \'+d+\' \'+h+\':\'+m+\' \'+�+\' | \';�.�(�).�=�;�(\'�("\'+�+\'");\',\'�\');� �}',53,53,'date|12|id|new|10|month|if|days|day|months|Array|ampm|result|date_time|Jul|getDay|getDate|Dec|Nov|Oct|Sep|Aug|Date|Jun|Jan|May|Apr|Mar|Feb|year|getFullYear|getMonth|true|Fri|Sun|var|1000|setTimeout|innerHTML|getElementById|document|AM|PM|getSeconds|Mon|getMinutes|getHours|Sat|return|Thu|Wed|Tue|function'.split('|'),0,{}))
+function date_time(id) {
+    date = new Date;
+    year = date.getFullYear();
+    month = date.getMonth();
+    months = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');
+    d = date.getDate();
+    day = date.getDay();
+    days = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
+    h = date.getHours();
+    if (h < 10) {
+        h = "0" + h
+    }
+    m = date.getMinutes();
+    s = date.getSeconds();
+    if (s < 10) {
+        s = "0" + s
+    }
+    var ampm = h >= 12 ? 'PM' : 'AM';
+    h = h % 12;
+    h = h ? h : 12;
+    m = m < 10 ? '0' + m : m;
+    result = ' | ' + days[day] + ' ' + months[month] + ' ' + d + ' ' + h + ':' + m + ' ' + ampm + ' | ';
+    document.getElementById(id).innerHTML = result;
+    setTimeout('date_time("' + id + '");', '1000');
+    return true
+}
