@@ -9,7 +9,25 @@
     <link rel="stylesheet" href="css/content/background_tut.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
+    <script type="text/javascript">
+    if (document.layers) {
+      document.captureEvents(Event.MOUSEDOWN);
+      document.onmousedown = function() {
+        return false;
+      };
+    } else {
+      document.onmouseup = function(e) {
+        if (e != null && e.type == "mouseup") {
+          if (e.which == 2 || e.which == 3) {
+            return false;
+          }
+        }
+      };
+    }
+    document.oncontextmenu = function() {
+      return false;
+    };
+  </script>
   </head>
   <body>
     <script type="text/javascript">
