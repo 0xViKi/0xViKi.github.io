@@ -81,7 +81,7 @@
     cursor: default;
 }
 .tt {
-    padding-left: calc(75% - 20px);
+    padding-left: calc(78% - 5px);
     font-family: monospace;
     font-size: 15px;
     color: white;
