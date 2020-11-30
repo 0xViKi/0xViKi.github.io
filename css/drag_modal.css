@@ -11,6 +11,7 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 3rem 0 rgba(0, 0, 0, .2);
+    z-index: 100;
 }
 
 .content {
@@ -31,7 +32,6 @@
     font-size: 15px;
     text-align: center;
     cursor: move;
-    z-index: 10;
     background-color: transparent;
     color: #333;
     font-family: "Open Sans";
@@ -44,7 +44,6 @@
     font-size: 15px;
     font-family: "Open Sans";
     cursor: move;
-    z-index: 10;
     background-color: transparent;
     color: #333;
     cursor: move;
