@@ -1,1 +1,64 @@
-#about{position:absolute;top:calc(50% - 220px);left:calc(50% - 220px);width:30rem;height:21rem;z-index:9;background-color:LightPink;border:1px solid transparent;text-align:left;display:none;font-family:monospace;font-size:15px;filter:blur(5px);border-radius:25px;overflow:hidden;opacity:.75;z-index:100}#about:hover{filter:blur(0)}.content{padding-left:18px;padding-right:18px;text-align:left;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#aboutheader{padding:10px;border-radius:25px;margin-left:0;font-size:15px;text-align:center;cursor:move;z-index:10;background-color:LightPink;color:BLack;opacity:.5}#aboutfoot{padding:10px;border-radius:25px;margin-left:0;margin-top:1em;text-align:center;font-size:15px;cursor:move;z-index:10;background-color:LightPink;color:Black;cursor:move;opacity:.5}#close{cursor:default}.usericon{margin-left:40%;width:100px;height:100px;background:transparent;position:relative;border-radius:50%;background-size:contain;background-image:url(../img/about.gif)}
+#about {
+    position: absolute;
+    top: calc(50% - 220px);
+    left: calc(50% - 220px);
+    width: 30rem;
+    height: 21.5rem;
+    background-color: rgba(255, 225, 225, .5);
+    text-align: left;
+    display: none;
+    font-size: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, .2);
+}
+
+.content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+    font-family: "Open Sans";
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#aboutheader {
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 0;
+    font-size: 15px;
+    text-align: center;
+    cursor: move;
+    z-index: 10;
+    background-color: transparent;
+    color: #333;
+    font-family: "Open Sans";
+}
+#aboutfoot {
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Open Sans";
+    cursor: move;
+    z-index: 10;
+    background-color: transparent;
+    color: #333;
+    cursor: move;
+}
+#close {
+    cursor: default;
+}
+.usericon {
+    margin-left: 40%;
+    width: 100px;
+    height: 80px;
+    background: transparent;
+    position: relative;
+    border-radius: 50%;
+    background-size: contain;
+    background-image: url(../img/about1.gif);
+}

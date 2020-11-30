@@ -1,1 +1,54 @@
-.content_of a:hover,.content_of a:link,.content_of a:visited,.tutborder{background-color:transparent}body{background-image:url(../../img/kali_logo.png);background-repeat:no-repeat;max-width: 100%;min-height: 100%;background-attachment:fixed;background-size:cover;overflow:hidden}.tutborder{border:5px solid transparent;border-radius:50px;border-width:80%;padding:10px;text-align:center}.tutHead{padding-left:30px;color:#000;font-size:40px;font-weight:10px;font-family:Audiowide;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.tutHead .letter{display:inline-block;line-height:15px}.content_of{padding-top:60px;padding-left:60px;font-family:'Courier Prime'}.content_of a:link{color:#000;text-decoration:none}.content_of a:hover{color:Teal;text-decoration:underline}.content_of a:visited{color:#000;text-decoration:none}
+.content_of a:hover,
+.content_of a:link,
+.content_of a:visited,
+.tutborder {
+    background-color: transparent;
+}
+body {
+    background-image: url(../../img/kali_logo.png);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+.tutborder {
+    border: 5px solid transparent;
+    border-radius: 50px;
+    border-width: 80%;
+    padding: 10px;
+    text-align: center;
+}
+.tutHead {
+    padding-left: 30px;
+    color: #000;
+    font-size: 40px;
+    font-weight: 10px;
+    font-family: "Audiowide";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.tutHead .letter {
+    display: inline-block;
+    line-height: 15px;
+}
+.content_of {
+    padding-top: 60px;
+    padding-left: 60px;
+    font-family: "Courier Prime";
+}
+.content_of a:link {
+    color: #000;
+    text-decoration: none;
+}
+.content_of a:hover {
+    color: Teal;
+    text-decoration: underline;
+}
+.content_of a:visited {
+    color: #000;
+    text-decoration: none;
+}

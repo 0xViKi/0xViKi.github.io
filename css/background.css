@@ -1,2 +1,8 @@
-body{background-image:url('../img/index.png');background-repeat:no-repeat;background-attachment:fixed;background-size:cover;overflow: hidden;max-width: 100%;min-height: 100%}
-
+body {
+    height: 100%;
+    background-image: url("../img/bat.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}

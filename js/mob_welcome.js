@@ -1,1 +1,19 @@
-eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('j 2=o.p(\'.3\');2.m=2.l.k(/\\f/g,"<6 h=\'a\'>$&</6>");n.r({s:t}).d({c:\'.3 .a\',q:[4,1],b:[0,1],u:0,8:"7",9:v,e:(w,i)=>x*i}).d({c:\'.3\',b:0,9:5,8:"7",e:5});',34,34,'||textWrapper|mob_welcome|||span|easeOutExpo|easing|duration|letter|opacity|targets|add|delay|S||class||var|replace|textContent|innerHTML|anime|document|querySelector|scale|timeline|loop|false|translateZ|950|el|250'.split('|'),0,{}))
+var textWrapper = document.querySelector('.mob_welcome');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+anime.timeline({
+    loop: false
+}).add({
+    targets: '.mob_welcome .letter',
+    scale: [4, 1],
+    opacity: [0, 1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 250 * i
+}).add({
+    targets: '.mob_welcome',
+    opacity: 0,
+    duration: 5,
+    easing: "easeOutExpo",
+    delay: 5
+});
