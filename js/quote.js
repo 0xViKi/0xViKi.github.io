@@ -87,7 +87,7 @@ function setRandomBackground(){
   }else if (randomNumber == 4){
     document.body.style.background = 'purple';
   }else if (randomNumber == 5){
-    document.body.style.background = 'Khaki';
+    document.body.style.background = 'darkgoldenrod';
   }else if (randomNumber == 6){
     document.body.style.background = 'darkorange';
   }
