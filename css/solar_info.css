@@ -1,0 +1,76 @@
+#solar_info {
+  position: absolute;
+  top: calc(68% - 10px);
+  left: calc(2% - 10px);
+  width: 25rem;
+  height: 10rem;
+  background-color: rgba(255, 225, 225, .8);
+  text-align: left;
+  display: none;
+  font-size: 15px;
+  border-radius: 10px;
+  overflow: auto;
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, .1);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  z-index: 100;
+  opacity: 0.1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#solar_info:hover{
+  opacity: 1;
+}
+#solar_info::-webkit-scrollbar{
+  display: none;
+}
+#information {
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 15px;
+  text-align: left;
+  cursor: default;
+  background-color: transparent;
+  color: black;
+}
+
+#close{
+  position: absolute;
+  margin-left:  14rem;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.3;
+}
+#close:hover{
+  opacity: 1;
+}
+
+#ininfo{
+  font-family: 'Open Sans';
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p{
+  padding: 5px;
+  color: black;
+  font-size: 17px;
+  font-weight: bolder;
+  font-family: 'Open Sans';
+  line-height: 1.3;
+}
+
+#mars_info{
+  font-size: 17px;
+}
+#sc{
+  font-size: 12px;
+  text-align: left;
+}

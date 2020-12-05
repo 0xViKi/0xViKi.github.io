@@ -19,8 +19,9 @@ function date_time(id) {
     h = h % 12;
     h = h ? h : 12;
     m = m < 10 ? '0' + m : m;
-    result = days[day] + ' ' + months[month] + ' ' + d + ' ' + h + ':' + m + ' ' + ampm;
+    result = days[day] + ' ' + months[month] + ' ' + d + ' ' + h + ':' + m + ' ' + ampm ;
     document.getElementById(id).innerHTML = result;
     setTimeout('date_time("' + id + '");', '1000');
     return true
 }
+

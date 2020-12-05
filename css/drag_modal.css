@@ -3,22 +3,22 @@
     top: calc(50% - 220px);
     left: calc(50% - 220px);
     width: 30rem;
-    height: 21.5rem;
-    background-color: rgba(255, 225, 225, .5);
+    height: 22.5rem;
+    background-color: rgba(255, 225, 225, .4);
     text-align: left;
     display: none;
     font-size: 15px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, .2);
-    z-index: 100;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, .4);
+    z-index: 100
 }
 
 .content {
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: left;
-    font-family: "Open Sans";
+    font-family: Helvetica, Arial;
     cursor: default;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -32,6 +32,7 @@
     font-size: 15px;
     text-align: center;
     cursor: move;
+    z-index: 10;
     background-color: transparent;
     color: #333;
     font-family: "Open Sans";
@@ -44,6 +45,7 @@
     font-size: 15px;
     font-family: "Open Sans";
     cursor: move;
+    z-index: 10;
     background-color: transparent;
     color: #333;
     cursor: move;

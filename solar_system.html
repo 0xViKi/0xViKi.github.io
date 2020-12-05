@@ -5,7 +5,13 @@
   <title>Element-X</title>
   <link rel="icon" href="img/solar_system.png" type="image/gif" sizes="16x16">
   <link rel="stylesheet" href="css/solar_system.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <link rel="stylesheet" href="css/solar_info.css">
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script type="text/javascript" src="js/show_hide.js"></script>
+  <script type="text/javascript" src="js/solar_hs.js"></script>
 
 </head>
 <body>
@@ -16,16 +22,135 @@
       <h1>Solar System</h1>
       <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
     </div>
+    <div id="solar_info">
+      <div id="information">
+        <a id="ininfo">INFORMATION</a>
+        <a id="close" onclick="hide('solar_info')"><i  class="fa fa-times-circle" aria-hidden="true"></i></a>
+        <p id="sc">For more information scroll</p>
+      </div>
+      <!-- Sun -->
+      <p style="display:none" id="sun_info">
+        <a target="_blank" href="https://solarsystem.nasa.gov/solar-system/sun/overview/">The Sun</a> is a star, a hot ball of glowing gases at the heart of our solar
+        system. Its influence extends far beyond the orbits of distant Neptune
+        and Pluto. Without the Sun's intense energy and heat, there would be no
+        life on Earth. And though it is special to us, there are billions of
+        stars like our Sun scattered across the Milky Way galaxy. <br> <br>
+        Names: Sun, Sol /ˈsɒl/, Helios /ˈhiːliəs/ <br>
+        Escape velocity (from the surface): 617.7 km/s; 55 × Earth <br>
+        Mean radiance (Isol): 2.009×107 W·m−2·sr−1 <br>
+        Equatorial surface gravity:274 m/s2; 28 × Earth <br>
+        Center density (modeled): 162.2 g/cm3; 12.4 × Earth <br>
+        Luminosity (Lsol): 3.828×1026 W; ≈ 3.75×1028 lm; ≈ 98 lm/W efficacy <br>
+      </p>
+      <!-- Mercury -->
+      <p style="display:none" id="mercury_info">
+        Sun-scorched <a target="_blank" href="https://solarsystem.nasa.gov/planets/mercury/overview/">Mercury</a>
+        is only slightly larger than Earth's Moon. Like the Moon, Mercury has very
+        little atmosphere to stop impacts and it is covered with craters. Mercury's
+        dayside is super heated by the Sun, but at night temperatures drop hundreds
+        of degrees below freezing. Ice may even exist in craters. Mercury has egg-shaped
+        orbit. <br> <br>
+        Orbital period: 88 days <br>
+        Mass: 3.285 × 10^23 kg (0.055 M⊕) <br>
+        Radius: 2,439.7 km <br>
+        Length of day: 58d 15h 30m <br>
+      </p>
+      <!-- Venus -->
+      <p style="display:none" id="venus_info">
+        <a target="_blank" href="https://solarsystem.nasa.gov/planets/venus/overview/">Venus</a> is a dim world
+        of intense heat and volcanic activity. Similar in structure and size to
+        Earth, Venus' thick, toxic atmosphere traps heat in a runaway 'greenhouse
+        effect'. The scorched world has temperatures hot enough to melt lead.
+        Glimpses below the clouds reveal volcanoes and deformed mountains.
+        Venus spins slowly in the opposite direction of most planets.<br>
+        <br> Orbital period: 225 days <br>
+        Length of day: 116d 18h 0m <br>
+        Surface area: 460.2 million km² <br>
+        Equatorial rotation velocity: 6.52 km/h (1.81 m/s)
+      </p>
+      <!-- Earth -->
+      <p style="display:none" id="earth_info">
+        <a target="_blank" href="https://solarsystem.nasa.gov/planets/earth/overview/">Earth</a> is an ocean planet.
+        Our home world's abundance of water - and life - makes it unique in our
+        solar system. Other planets, plus a few moons, have ice, atmospheres, seasons
+        and even weather, but only on Earth does the whole complicated mix come
+        together in a way that encourages life - and lots of it. <br> <br>
+        Radius: 6,371 km <br>
+        Mass: 5.972 × 10^24 kg <br>
+        Age: 4.543 billion years
+      </p>
+      <!-- Mars -->
+      <p style="display:none" id="mars_info">
+        Though details of <a target="_blank" href="https://solarsystem.nasa.gov/planets/mars/overview/">Mars</a>
+        surface are difficult to see from Earth, telescope observations show seasonally
+        changing features and white patches at the poles. For decades, people speculated
+        that bright and dark areas on Mars were patches of vegetation, that Mars
+        could be a likely place for life-forms, and that water might exist in the
+        polar caps. When the Mariner 4 spacecraft flew by Mars in 1965, many were
+        shocked to see photographs of a bleak, cratered surface. Mars seemed to be
+        a dead planet. Later missions, however, have shown that Mars is a complex
+        member of the solar system and holds many mysteries yet to be solved. <br> <br>
+        Gravity: 3.711 m/s² <br>
+        Orbital period: 687 days <br>
+        Surface pressure: 0.636 (0.4–0.87) kPa; 0.00628 atm
+      </p>
+      <!-- Jupiter -->
+      <p style="display:none" id="jupiter_info">
+        The most massive planet in our solar system, with four large moons and many
+        smaller moons, <a target="_blank" href="https://solarsystem.nasa.gov/planets/jupiter/overview/">Jupiter</a> forms a kind of miniature solar system.
+        Jupiter resembles a star in composition. In fact, if it had been about 80
+        times more massive, it would have become a star rather than a planet.<br> <br>
+        Orbital period: 12 years <br>
+        Surface area: 61.42 billion km² <br>
+        Mass: 1.898 × 10^27 kg (317.8 M⊕) <br>
+        Radius: 69,911 km
+      </p>
+      <!-- Saturn -->
+      <p style="display:none" id="saturn_info">
+        <a target="_blank" href="https://solarsystem.nasa.gov/planets/saturn/overview/">Saturn</a> was the most distant of the five planets known to the ancients.
+        Like Jupiter, Saturn is made mostly of hydrogen and helium. Its volume is
+        755 times greater than that of Earth. Winds in the upper atmosphere reach
+        500 meters (1,600 feet) per second in the equatorial region. These super-fast winds,
+        combined with heat rising from within the planet's interior, cause the yellow
+        and gold bands visible in the atmosphere. <br> <br>
+        Orbital period: 29 years <br>
+        Mass: 5.683 × 10^26 kg (95.16 M⊕) <br>
+        Radius: 58,232 km <br>
+        Gravity: 10.44 m/s² <br>
+       </p>
+
+      <!-- Uranus -->
+      <p style="display:none" id="uranus_info">
+        The first planet found with the aid of a telescope, <a target="_blank" href="https://solarsystem.nasa.gov/planets/uranus/overview/">Uranus</a> was discovered
+        in 1781 by astronomer William Herschel. The seventh planet from the Sun is
+        so distant that it takes 84 years to complete one orbit. <br>
+        Orbital period: 84 years <br> <br>
+        Radius: 25,362 km <br>
+        Mass: 8.681 × 10^25 kg (14.54 M⊕) <br>
+      </p>
+      <p style="display:none" id="neptune_info">
+        Nearly 4.5 billion kilometers (2.8 billion miles) from the Sun,
+        <a target="_blank" id="neptune_img" href="https://solarsystem.nasa.gov/planets/neptune/overview/">Neptune</a> orbits the
+        Sun once every 165 years. It is invisible to the naked eye because
+        of its extreme distance from Earth. Interestingly, the unusual elliptical
+        orbit of the dwarf planet Pluto brings Pluto inside Neptune's orbit for a 20-year
+        period out of every 248 Earth years. <br> <br>
+        Orbital period: 165 years <br>
+        Discovered: 23 September 1846 <br>
+        Surface area: 7.618 billion km²
+      </p>
+    </div>
+
     <div id="data">
-      <a class="sun" title="sun" href="#sunspeed">Sun</a>
-      <a class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
-      <a class="venus" title="venus" href="#venusspeed">Venus</a>
-      <a class="earth active" title="earth" href="#earthspeed">Earth</a>
-      <a class="mars" title="mars" href="#marsspeed">Mars</a>
-      <a class="jupiter" title="jupiter" href="#jupiterspeed">Jupiter</a>
-      <a class="saturn" title="saturn" href="#saturnspeed">Saturn</a>
-      <a class="uranus" title="uranus" href="#uranusspeed">Uranus</a>
-      <a class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
+      <a onclick="solar('solar_info', 'sun_info')" class="sun" title="sun" href="#sunspeed">Sun</a>
+      <a onclick="solar('solar_info', 'mercury_info')" class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
+      <a onclick="solar('solar_info', 'venus_info')" class="venus" title="venus" href="#venusspeed">Venus</a>
+      <a onclick="solar('solar_info', 'earth_info')" class="earth active" title="earth" href="#earthspeed">Earth</a>
+      <a onclick="solar('solar_info', 'mars_info')" class="mars" title="mars" href="#marsspeed">Mars</a>
+      <a onclick="solar('solar_info', 'jupiter_info')" class="jupiter" title="jupiter" href="#jupiterspeed">Jupiter</a>
+      <a onclick="solar('solar_info', 'saturn_info')" class="saturn" title="saturn" href="#saturnspeed">Saturn</a>
+      <a onclick="solar('solar_info', 'uranus_info')" class="uranus" title="uranus" href="#uranusspeed">Uranus</a>
+      <a onclick="solar('solar_info', 'neptune_info')" class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
     </div>
     <div id="controls">
       <label class="set-view">
@@ -153,6 +278,7 @@
     </script>
     <script src="js/prefixfree.min.js"></script>
     <script src="js/scripts.min.js"></script>
+
   </body>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="js/solar_system.js"></script>

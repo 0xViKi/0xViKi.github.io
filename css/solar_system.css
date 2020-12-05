@@ -6,13 +6,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  overflow: hidden;
+}
 
 ol, ul {
   list-style: none; }
@@ -1403,7 +1406,9 @@ h1 {
   background-image: url(img/download.png); } */
 
 #universe {
-  background-image: url(../simg/download.png);}
+  /* background-image: url(../simg/download.png); */
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 5%, rgba(2,1,0,1) 7%, rgba(6,24,54,1) 48%, rgba(0,0,0,1) 99%);}
 
 #sun {
   background-image: url(../simg/sun.png); }
