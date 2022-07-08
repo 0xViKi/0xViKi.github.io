@@ -14,27 +14,18 @@
     display: inline-block;
     line-height: 1em;
 }
-/* #load {
-    width: 15%;
-    height: 15%;
-    margin-left: calc(44% - 10px);
-    content: url(../img/load.gif);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    top: 0;
-}
- */
+
 .loading {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    margin-left: 50%;
+    margin-bottom: 50%;
     border-radius: 50%;
-    background:#f03355;
+    background:#d61438;
     clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
     animation: sh1 2s infinite cubic-bezier(0.3,1,0,1);
 }
 @keyframes sh1 {
-  33% {border-radius: 0;background:#514b82 ;clip-path: polygon(0 0,100% 0,100% 100%,0 100%)}
-  66% {border-radius: 0;background:#ffa516 ;clip-path: polygon(50% 0,50% 0,100% 100%,0 100%)}
+  33% {border-radius: 0;background:#eb45b9 ;clip-path: polygon(0 0,100% 0,100% 100%,0 100%)}
+  66% {border-radius: 0;background:#e79208 ;clip-path: polygon(50% 0,50% 0,100% 100%,0 100%)}
 }
